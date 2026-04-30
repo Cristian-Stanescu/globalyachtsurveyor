@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Yacht Surveyor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Top bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <span><i class="fas fa-phone"></i> +1 (800) 123-4567</span>
+                <span><i class="fas fa-envelope"></i> info@globalyachtsurveyor.com</span>
+                <div class="top-bar-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header id="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#" class="logo">
+                    <span class="logo-icon"><i class="fas fa-anchor"></i></span>
+                    <span class="logo-text">
+                        <span class="logo-main">Global Yacht</span>
+                        <span class="logo-sub">Surveyor</span>
+                    </span>
+                </a>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <nav id="mainNav">
+                    <ul class="nav-list">
+                        <li class="nav-item active"><a href="#">Home</a></li>
+                        <li class="nav-item has-dropdown">
+                            <a href="#services">Services <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#services">Pre-Purchase Survey</a></li>
+                                <li><a href="#services">Insurance Survey</a></li>
+                                <li><a href="#services">Appraisal Survey</a></li>
+                                <li><a href="#services">Damage Survey</a></li>
+                                <li><a href="#services">Condition &amp; Value</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#about">About</a></li>
+                        <li class="nav-item"><a href="#gallery">Gallery</a></li>
+                        <li class="nav-item"><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <h1>Professional Yacht Survey Services</h1>
+                <p>Certified marine surveyors providing thorough, impartial, and professional yacht inspections worldwide</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">Our Services</a>
+                    <a href="#contact" class="btn btn-outline">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome / Intro Section -->
+    <section class="intro-section" id="welcome">
+        <div class="container">
+            <div class="intro-grid">
+                <div class="intro-text">
+                    <div class="section-label">Welcome to Global Yacht Surveyor</div>
+                    <h2>Your Trusted Marine Surveying Experts</h2>
+                    <p>At Global Yacht Surveyor, we provide comprehensive marine survey services for buyers, sellers, insurers, and lenders. With years of experience and international certifications, our surveyors deliver detailed, accurate reports that protect your investment.</p>
+                    <p>Whether you're purchasing a new vessel, renewing insurance, or assessing damage, our team brings the expertise and dedication required to give you complete peace of mind.</p>
+                    <a href="#about" class="btn btn-primary">Learn More About Us</a>
+                </div>
+                <div class="intro-image">
+                    <img src="images/yacht-intro.jpg" alt="Professional yacht surveyor at work" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="img-placeholder" style="display:none;">
+                        <i class="fas fa-ship"></i>
+                        <span>Yacht Surveying</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">What We Offer</div>
+                <h2>Our Survey Services</h2>
+                <p>Comprehensive marine survey solutions tailored to your needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Pre-Purchase Survey</h3>
+                    <p>A thorough inspection of the vessel before purchase, covering the hull, deck, mechanical systems, electrical systems, and all on-board equipment to ensure you make a fully informed decision.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Insurance Survey</h3>
+                    <p>Required by most insurers, our insurance surveys assess the current value and condition of your vessel, ensuring you have appropriate coverage at the right price.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Appraisal Survey</h3>
+                    <p>An independent valuation of your vessel based on current market conditions, condition, and comparable sales — ideal for financing, estate planning, or dispute resolution.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Damage Survey</h3>
+                    <p>Detailed assessment of damage caused by collision, grounding, fire, flooding, or other incidents. We document all damage and provide cost estimates for repairs.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Condition &amp; Value Survey</h3>
+                    <p>A combined assessment providing both the current condition of the vessel and its fair market value, offering a complete picture for buyers, sellers, and financiers.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Tonnage &amp; Documentation</h3>
+                    <p>Official tonnage measurement and documentation assistance for vessel registration, flag state compliance, and legal requirements in various jurisdictions.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats / Why Us Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Surveys Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">Years of Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">30+</div>
+                    <div class="stat-label">Countries Covered</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="images/surveyor.jpg" alt="Certified yacht surveyor" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="img-placeholder" style="display:none;">
+                        <i class="fas fa-user-tie"></i>
+                        <span>Certified Surveyor</span>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="badge-number">20+</span>
+                        <span class="badge-text">Years of<br>Experience</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <div class="section-label">About Us</div>
+                    <h2>Experienced. Certified. Dedicated.</h2>
+                    <p>Global Yacht Surveyor is a leading marine surveying firm with over two decades of experience in the industry. Our surveyors hold memberships and certifications from the most respected professional organizations in the field.</p>
+                    <div class="certifications">
+                        <div class="cert-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>NAMS Certified Marine Surveyor (CMS)</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>SAMS Accredited Marine Surveyor (AMS)</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>IIMS Full Member</span>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Lloyd's Register Approved Surveyor</span>
+                        </div>
+                    </div>
+                    <p>We operate with complete independence and impartiality, ensuring our reports accurately reflect the condition and value of each vessel we inspect.</p>
+                    <a href="#contact" class="btn btn-primary">Contact Our Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Our Work</div>
+                <h2>Gallery</h2>
+                <p>A selection of vessels we have surveyed across the globe</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/gallery-1.jpg" alt="Sailing yacht survey" onerror="this.onerror=null; this.src=''; this.closest('.gallery-item').classList.add('placeholder')">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                        <span>Sailing Yacht</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-2.jpg" alt="Motor yacht survey" onerror="this.onerror=null; this.src=''; this.closest('.gallery-item').classList.add('placeholder')">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                        <span>Motor Yacht</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-3.jpg" alt="Catamaran survey" onerror="this.onerror=null; this.src=''; this.closest('.gallery-item').classList.add('placeholder')">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                        <span>Catamaran</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-4.jpg" alt="Powerboat survey" onerror="this.onerror=null; this.src=''; this.closest('.gallery-item').classList.add('placeholder')">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                        <span>Powerboat</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-5.jpg" alt="Superyacht survey" onerror="this.onerror=null; this.src=''; this.closest('.gallery-item').classList.add('placeholder')">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                        <span>Superyacht</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-6.jpg" alt="Classic yacht survey" onerror="this.onerror=null; this.src=''; this.closest('.gallery-item').classList.add('placeholder')">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                        <span>Classic Yacht</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Client Feedback</div>
+                <h2>What Our Clients Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Exceptionally thorough and professional survey. The detailed report helped me negotiate the price down significantly. I wouldn't buy another boat without Global Yacht Surveyor."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div>
+                            <strong>James M.</strong>
+                            <span>Yacht Owner, Florida</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Their insurance survey was completed quickly and the report was accepted by our insurer without question. The communication throughout was excellent."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div>
+                            <strong>Sarah K.</strong>
+                            <span>Charter Operator, Bahamas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"We used Global Yacht Surveyor for a damage assessment after a marina incident. Their comprehensive report was instrumental in our successful insurance claim."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div>
+                            <strong>Robert D.</strong>
+                            <span>Marina Manager, Mediterranean</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Get In Touch</div>
+                <h2>Contact Us</h2>
+                <p>Request a survey or ask us any questions about our services</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <strong>Office Address</strong>
+                            <p>123 Marina Way, Fort Lauderdale, FL 33316, USA</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <strong>Phone</strong>
+                            <p>+1 (800) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <strong>Email</strong>
+                            <p>info@globalyachtsurveyor.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <strong>Office Hours</strong>
+                            <p>Mon – Fri: 8:00 AM – 6:00 PM EST</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <h3>Request a Survey</h3>
+                    <form class="contact-form" onsubmit="return false;">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="Your first name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Your last name" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="Your email address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="surveyType">Survey Type</label>
+                            <select id="surveyType" name="surveyType">
+                                <option value="">Select a survey type</option>
+                                <option value="pre-purchase">Pre-Purchase Survey</option>
+                                <option value="insurance">Insurance Survey</option>
+                                <option value="appraisal">Appraisal Survey</option>
+                                <option value="damage">Damage Survey</option>
+                                <option value="condition">Condition &amp; Value Survey</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="vessel">Vessel Details</label>
+                            <input type="text" id="vessel" name="vessel" placeholder="Make, model, year, length (e.g. 2015 Bavaria 42)">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us more about your survey requirements, location, and preferred dates"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo logo-white">
+                        <span class="logo-icon"><i class="fas fa-anchor"></i></span>
+                        <span class="logo-text">
+                            <span class="logo-main">Global Yacht</span>
+                            <span class="logo-sub">Surveyor</span>
+                        </span>
+                    </a>
+                    <p>Professional marine survey services worldwide. Certified, independent, and trusted by yacht owners and the marine industry.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Pre-Purchase Survey</a></li>
+                        <li><a href="#services">Insurance Survey</a></li>
+                        <li><a href="#services">Appraisal Survey</a></li>
+                        <li><a href="#services">Damage Survey</a></li>
+                        <li><a href="#services">Condition &amp; Value</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Marina Way, Fort Lauderdale, FL 33316</p>
+                    <p><i class="fas fa-phone"></i> +1 (800) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@globalyachtsurveyor.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Global Yacht Surveyor. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Sticky header on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 80) {
+                header.classList.add('sticky');
+            } else {
+                header.classList.remove('sticky');
+            }
+        });
+
+        // Mobile navigation toggle
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('open');
+            this.classList.toggle('active');
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    const headerOffset = document.getElementById('header').offsetHeight;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                    // Close mobile nav if open
+                    document.getElementById('mainNav').classList.remove('open');
+                    document.getElementById('navToggle').classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
