@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Global Yacht Surveyor - Professional marine surveys, project management, and technical design by Tony Gagliardo. Traveling worldwide.">
+    <title>Marine Surveys | Global Yacht Surveyor</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" sizes="192x192" href="BlueOcean Logo.jpeg" type="image/jpeg">
+    <link rel="shortcut icon" href="BlueOcean Logo.jpeg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="BlueOcean Logo.jpeg" type="image/jpeg">
+
+    <style>
+        /* ===== RESET & BASE ===== */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --navy:       #0a1e2d;
+            --navy-dark:  #07141f;
+            --navy-mid:   #0d2a3e;
+            --blue:       #1a4a6b;
+            --accent:     #4a9fd4;
+            --light-gray: #f4f5f7;
+            --mid-gray:   #dde4ea;
+            --text-dark:  #2d3748;
+            --text-mid:   #4a5568;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text-dark);
+            background: #fff;
+            line-height: 1.7;
+        }
+
+        a { text-decoration: none; }
+        img { display: block; }
+
+        /* ===== TOP BAR ===== */
+        .top-bar {
+            background: #061421;
+            color: #7a9db5;
+            padding: 7px 0;
+            font-size: 0.78rem;
+        }
+
+        .top-bar-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .top-bar-contact {
+            display: flex;
+            align-items: center;
+            gap: 1.4rem;
+            flex-wrap: wrap;
+        }
+
+        .top-bar-contact a {
+            color: #7a9db5;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: color 0.2s;
+        }
+
+        .top-bar-contact a:hover { color: #fff; }
+
+        .social-icons {
+            display: flex;
+            gap: 0.9rem;
+            align-items: center;
+        }
+
+        .social-icons a {
+            color: #5a849e;
+            font-size: 0.85rem;
+            width: 26px;
+            height: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 1px solid #1a3a52;
+            transition: color 0.2s, border-color 0.2s;
+        }
+
+        .social-icons a:hover {
+            color: #fff;
+            border-color: #4a9fd4;
+        }
+
+        /* ===== MAIN HEADER ===== */
+        header.main-header {
+            background: var(--navy);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo-area {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 14px;
+            line-height: 1.25;
+        }
+
+        .logo-img {
+            height: 52px;
+            width: auto;
+            display: block;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-company {
+            font-family: 'Raleway', sans-serif;
+            font-size: 0.6rem;
+            font-weight: 600;
+            letter-spacing: 0.18em;
+            color: #5a849e;
+            text-transform: uppercase;
+        }
+
+        .logo-name {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 800;
+            letter-spacing: 0.14em;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .logo-title {
+            font-family: 'Raleway', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            color: #6a9ab5;
+            text-transform: uppercase;
+            font-style: italic;
+        }
+
+        nav.main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2.2rem;
+        }
+
+        nav.main-nav ul li a {
+            font-family: 'Raleway', sans-serif;
+            color: #b0cdd9;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transition: color 0.2s;
+            padding-bottom: 5px;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav.main-nav ul li a:hover,
+        nav.main-nav ul li a.active {
+            color: #fff;
+            border-bottom-color: var(--accent);
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 580px;
+            max-height: 940px;
+            background: url('big ships.jpeg')
+                center / cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to bottom,
+                rgba(6, 18, 28, 0.55) 0%,
+                rgba(6, 18, 28, 0.72) 100%
+            );
+        }
+
+        .hero-content {
+            position: relative;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+            max-width: 880px;
+        }
+
+        .hero-eyebrow {
+            font-family: 'Raleway', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.35em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 1.2rem;
+        }
+
+        .hero h1 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 3.8rem;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            line-height: 1.15;
+            margin-bottom: 1.4rem;
+        }
+
+        .hero-subtitle {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 400;
+            font-style: italic;
+            letter-spacing: 0.03em;
+            color: #b8d4e2;
+            margin-bottom: 2.8rem;
+            max-width: 680px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            padding: 14px 38px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            border-radius: 3px;
+            transition: background 0.25s, transform 0.2s;
+        }
+
+        .btn-primary:hover {
+            background: #3a8fc4;
+            transform: translateY(-2px);
+        }
+
+        /* ===== INTRO / CRITICAL EYE ===== */
+        .intro-section {
+            background: var(--navy);
+            padding: 100px 0;
+        }
+
+        .intro-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .intro-text h2 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.85rem;
+            font-weight: 700;
+            line-height: 1.45;
+            color: #e8f1f7;
+            margin-bottom: 1.2rem;
+        }
+
+        .intro-text h3 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 500;
+            font-style: italic;
+            color: #7aadc5;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .intro-text p {
+            color: #7a9db5;
+            font-size: 0.92rem;
+            line-height: 1.9;
+        }
+
+        .intro-image {
+            overflow: hidden;
+            border-radius: 4px;
+        }
+
+        .intro-image img {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+        }
+
+        /* ===== EXPERIENCE SECTION ===== */
+        .experience-section {
+            background: var(--light-gray);
+            padding: 100px 0;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--navy);
+            line-height: 1.25;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.6rem;
+        }
+
+        .exp-card {
+            background: #fff;
+            padding: 2rem 1.7rem;
+            border-radius: 4px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            border-top: 3px solid var(--accent);
+            transition: transform 0.25s, box-shadow 0.25s;
+        }
+
+        .exp-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .exp-card-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(74, 159, 212, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.2rem;
+            color: var(--accent);
+            font-size: 1.2rem;
+        }
+
+        .exp-card h3 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 0.88rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--navy);
+            margin-bottom: 0.9rem;
+        }
+
+        .exp-card p {
+            font-size: 0.86rem;
+            color: var(--text-mid);
+            line-height: 1.85;
+        }
+
+        /* ===== CHOOSE US / IMAGE SECTION ===== */
+        .choose-section {
+            background: #fff;
+            padding: 100px 0;
+        }
+
+        .choose-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .choose-image img {
+            width: 100%;
+            height: 460px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .choose-text .section-title {
+            text-align: left;
+            font-size: 1.85rem;
+        }
+
+        .choose-text p {
+            color: var(--text-mid);
+            font-size: 0.92rem;
+            line-height: 1.9;
+            margin-top: 1.4rem;
+        }
+
+        /* ===== SERVICES SECTION ===== */
+        .services-section {
+            background: var(--navy);
+            padding: 100px 0;
+        }
+
+        .services-section .section-title { color: #e8f1f7; }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.09);
+            border-radius: 4px;
+            overflow: hidden;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .service-card-img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .service-card-body {
+            padding: 1.8rem 1.6rem;
+        }
+
+        .service-card h3 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 800;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #e8f1f7;
+            margin-bottom: 0.9rem;
+        }
+
+        .service-card p {
+            font-size: 0.86rem;
+            color: #7a9db5;
+            line-height: 1.85;
+            margin-bottom: 1.2rem;
+        }
+
+        .service-card a.link-more {
+            font-family: 'Raleway', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--accent);
+            transition: opacity 0.2s;
+        }
+
+        .service-card a.link-more:hover { opacity: 0.8; }
+
+        /* ===== CONTACT SECTION ===== */
+        .contact-section {
+            background: var(--light-gray);
+            padding: 100px 0;
+        }
+
+        .contact-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .contact-header .section-title { font-size: 1.85rem; }
+
+        .contact-header p {
+            color: var(--text-mid);
+            font-size: 0.92rem;
+            line-height: 1.9;
+            margin-top: 0.8rem;
+        }
+
+        .contact-cols {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-detail {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-top: 0.4rem;
+            color: var(--text-mid);
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .contact-detail i {
+            color: var(--accent);
+            margin-top: 4px;
+            width: 16px;
+            flex-shrink: 0;
+        }
+
+        .contact-detail a {
+            color: var(--blue);
+            transition: color 0.2s;
+        }
+
+        .contact-detail a:hover { color: var(--accent); }
+
+        /* ===== MEMBERSHIPS SECTION ===== */
+        .memberships-section {
+            background: #fff;
+            padding: 70px 0;
+            border-top: 1px solid var(--mid-gray);
+        }
+
+        .memberships-section .section-title {
+            font-size: 1.3rem;
+        }
+
+        .membership-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3.5rem;
+            flex-wrap: wrap;
+            margin-top: 2.5rem;
+        }
+
+        .membership-logos a img {
+            height: 100px;
+            width: auto;
+            object-fit: contain;
+            opacity: 0.8;
+            transition: opacity 0.2s, filter 0.2s;
+            filter: grayscale(15%);
+        }
+
+        .membership-logos a:hover img {
+            opacity: 1;
+            filter: none;
+        }
+
+        .membership-links {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.83rem;
+            color: var(--text-mid);
+        }
+
+        .membership-links a {
+            color: var(--blue);
+            transition: color 0.2s;
+        }
+
+        .membership-links a:hover { color: var(--accent); }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--navy-dark);
+            color: #5a7d91;
+            padding: 55px 0 28px;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-brand .footer-name {
+            font-family: 'Raleway', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 800;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: #c8dde8;
+            margin-bottom: 0.2rem;
+        }
+
+        .footer-brand .footer-subtitle {
+            font-family: 'Raleway', sans-serif;
+            font-size: 0.7rem;
+            font-style: italic;
+            color: #3d6577;
+            margin-bottom: 1.2rem;
+            letter-spacing: 0.08em;
+        }
+
+        .footer-brand p {
+            font-size: 0.82rem;
+            line-height: 1.9;
+            color: #3d6577;
+        }
+
+        .footer-col h4 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: #7a9db5;
+            margin-bottom: 1.2rem;
+        }
+
+        .footer-col ul { list-style: none; }
+
+        .footer-col ul li { margin-bottom: 0.55rem; }
+
+        .footer-col ul li a {
+            font-size: 0.83rem;
+            color: #3d6577;
+            transition: color 0.2s;
+        }
+
+        .footer-col ul li a:hover { color: #8ab0c5; }
+
+        .footer-bottom {
+            border-top: 1px solid #0f2435;
+            padding-top: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.78rem;
+            color: #2d4d61;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 0.9rem;
+        }
+
+        .footer-social a {
+            color: #2d4d61;
+            font-size: 0.9rem;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 1px solid #142535;
+            transition: color 0.2s, border-color 0.2s;
+        }
+
+        .footer-social a:hover {
+            color: #8ab0c5;
+            border-color: #4a9fd4;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1080px) {
+            .cards-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 860px) {
+            .hero h1 { font-size: 2.6rem; }
+            .intro-inner,
+            .choose-inner,
+            .contact-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+            .intro-image img,
+            .choose-image img { height: 300px; }
+            .services-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            nav.main-nav { display: none; }
+            .top-bar-contact { gap: 0.8rem; }
+            .form-row { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 560px) {
+            .hero h1 { font-size: 1.9rem; }
+            .cards-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .membership-logos { gap: 2rem; }
+            .membership-logos a img { height: 70px; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="top-bar-inner">
+            <div class="top-bar-contact">
+                <a href="tel:+15016181349">
+                    <i class="fas fa-phone-alt"></i>
+                    +1 501-618-1349
+                </a>
+                <a href="https://wa.me/15016181349" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+                <a href="mailto:tony@globalyachtsurveyor.com">
+                    <i class="fas fa-envelope"></i>
+                    tony@globalyachtsurveyor.com
+                </a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/tony_global_yacht_surveyor/" target="_blank"
+                    rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/Tony.Gagliardo.Marine" target="_blank"
+                    rel="noopener noreferrer" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/RedPillSailor" target="_blank"
+                    rel="noopener noreferrer" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/tony-gagliardo-3aa8346/" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN HEADER -->
+    <header class="main-header">
+        <div class="header-inner">
+            <div class="logo-area">
+                <img src="BlueOcean Logo.jpeg" alt="Blue Ocean Sales and Management LLC" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-company">Blue Ocean Sales and Management LLC</span>
+                    <span class="logo-name">Tony Gagliardo</span>
+                    <span class="logo-title">Global Yacht Surveyor</span>
+                </div>
+            </div>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="marine-surveys-types.html">Yacht Surveys</a></li>
+                    <li><a href="#">Useful Info</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero banner">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-eyebrow"></p>
+            <h1>Marine Surveys</h1>
+            <p class="hero-subtitle">By a surveyor traveling the globe with you</p>
+            <a href="marine-surveys-types.html" class="btn-primary">View Survey Services</a>
+        </div>
+    </section>
+    
+    <!-- INTRO / CRITICAL EYE -->
+    <section class="intro-section">
+        <div class="intro-inner">
+            <div class="intro-text">
+                <h2>For assessment of the typical items, about anyone can do it &mdash; but what you really need is&hellip;</h2>
+            </div>
+            <div class="intro-image">
+                <img src="rudder.jpeg"
+                    alt="Northavn yacht propellers and rudder viewed from hull bottom"
+                    loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- CRITICAL EYE / RIGGING SECTION -->
+    <section class="choose-section">
+        <div class="choose-inner">
+            <div class="choose-image">
+                <img src="rigging view.jpeg"
+                    alt="Standing rigging inspection showing stainless steel tangs with minor corrosion"
+                    loading="lazy">
+            </div>
+            <div class="choose-text">
+                <h3 class="section-title">A critical eye to spot potential problems so they remain small or not your problem at all.</h3>
+                <p>An exceptional surveyor will take the time to use his experienced eyes to spot any potential issue early, saving you time, money, and frustration. Getting an accurate, in-depth assessment of the not-so-obvious is our job.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- EXPERIENCE SECTION -->
+    <section class="experience-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Choose Us Because Experience Matters</h2>
+            </div>
+            <div class="cards-grid">
+                <div class="exp-card">
+                    <div class="exp-card-icon"><i class="fas fa-compass"></i></div>
+                    <h3>Naval Architecture Experience</h3>
+                    <p>Involved in the design of pleasure and commercial boats from 30 to 250 feet. Worked in a small three-man design team and for the largest production boat manufacturer in the world.</p>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-card-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Diverse Building Experience</h3>
+                    <p>Overseen vessels constructed in wood, aluminum, steel, and composites. Worked with others on the development of machine-produced mold tooling and closed molding techniques.</p>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-card-icon"><i class="fas fa-anchor"></i></div>
+                    <h3>Yachting Experience</h3>
+                    <p>35 years of experience and 60,000 ocean miles operating in the Gulf, Atlantic, Caribbean and Mediterranean waters. Have lived full-time aboard our sailing yacht since 2017.</p>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-card-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Nomadic &amp; Unbiased</h3>
+                    <p>Not rooted in any local area. Work for you, my client, and keep your best interest in mind &mdash; leaving sellers, brokers, yards, and vendors to take care of their own interests.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Services Available</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img class="service-card-img"
+                        src="hull.jpeg"
+                        alt="Yacht under construction with scaffolding"
+                        loading="lazy">
+                    <div class="service-card-body">
+                        <h3>Marine Surveying</h3>
+                        <p>Comprehensive pre-purchase, insurance, damage, and specialty surveys conducted to industry standards &mdash; wherever your vessel is located.</p>
+                        <a href="marine-surveys-types.html" class="link-more">Learn More &rarr;</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img class="service-card-img"
+                        src="shipyard.jpeg"
+                        alt="Spirit 52 deck view from up the mast"
+                        loading="lazy">
+                    <div class="service-card-body">
+                        <h3>Project Management</h3>
+                        <p>Refit supervision, new build oversight, and delivery management. We ensure your project is completed on time, on budget, and to specification.</p>
+                        <a href="#contact" class="link-more">Get in Touch &rarr;</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img class="service-card-img"
+                        src="technical design.jpeg"
+                        alt="Autopilot tiller arm design for 35 foot cutter"
+                        loading="lazy">
+                    <div class="service-card-body">
+                        <h3>Technical Design</h3>
+                        <p>Naval architecture support and custom technical design solutions, drawing on decades of hands-on experience across a wide range of vessel types.</p>
+                        <a href="#contact" class="link-more">Get in Touch &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+        <div class="contact-inner">
+            <div class="contact-header">
+                <h2 class="section-title">Let&rsquo;s Discuss Your Needs</h2>
+                <p>Call or message us for a consultation.</p>
+            </div>
+            <div class="contact-cols">
+                <div class="contact-info-col">
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <span><a href="mailto:tony@globalyachtsurveyor.com">tony@globalyachtsurveyor.com</a></span>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp: +1 501-618-1349</span>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Phone: +868-729-8885</span>
+                    </div>
+                </div>
+                <div class="contact-info-col">
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            Postal Address:<br>
+                            Blue Ocean Sales &amp; Management LLC<br>
+                            11 Walnut Street #13487<br>
+                            Green Cove Springs, Florida 32043
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEMBERSHIPS SECTION -->
+    <section class="memberships-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Tony Gagliardo Maintains Membership in the Following</h2>
+            </div>
+            <div class="membership-logos">
+                <a href="https://www.marinesurvey.org/" target="_blank" rel="noopener noreferrer">
+                    <img src="SAMS.jpg" alt="Society of Accredited Marine Surveyors® (SAMS)">
+                </a>
+                <a href="https://www.iims.org.uk/" target="_blank" rel="noopener noreferrer">
+                    <img src="IIMS.png" alt="International Institute of Marine Surveyors® (IIMS)">
+                </a>
+                <a href="https://abycinc.org/search/custom.asp?id=1294" target="_blank" rel="noopener noreferrer">
+                    <img src="ABYC Member.jpg" alt="ABYC Member">
+                </a>
+                <a href="https://abycinc.org/mpage/recreationalboaters" target="_blank" rel="noopener noreferrer">
+                    <img src="ABYC Advisor.png" alt="ABYC Certified Advisor">
+                </a>
+            </div>
+            <p class="membership-links">
+                <a href="https://www.marinesurvey.org/" target="_blank" rel="noopener noreferrer">Society of Accredited Marine Surveyors® &mdash; SAMS Surveyor Associate</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="https://www.iims.org.uk/" target="_blank" rel="noopener noreferrer">International Institute of Marine Surveyors® &mdash; IIMS AffilIIMS</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="https://abycinc.org/" target="_blank" rel="noopener noreferrer">American Boat and Yacht Council®</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-name">Tony Gagliardo</div>
+                    <div class="footer-subtitle">Global Yacht Surveyor</div>
+                    <p>Professional marine surveys by a surveyor traveling the globe with you.</p>
+                    <p style="margin-top: 0.8rem;">
+                        Blue Ocean Sales and Management LLC<br>
+                        11 Walnut Street #13487<br>
+                        Green Cove Springs, Florida 32043
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="marine-surveys-types.html">Yacht Surveys</a></li>
+                        <li><a href="#">Useful Info</a></li>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:tony@globalyachtsurveyor.com">tony@globalyachtsurveyor.com</a></li>
+                        <li><a href="tel:+15016181349">+1 501-618-1349</a></li>
+                        <li><a href="tel:+8687298885">+868-729-8885</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Blue Ocean Sales and Management LLC. All Rights Reserved.</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/tony_global_yacht_surveyor/" target="_blank"
+                        rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/Tony.Gagliardo.Marine" target="_blank"
+                        rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/RedPillSailor" target="_blank"
+                        rel="noopener noreferrer" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tony-gagliardo-3aa8346/" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
