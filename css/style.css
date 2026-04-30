@@ -365,7 +365,10 @@ ul {
     transform: translateY(-7px) rotate(-45deg);
 }
 
-/* ---------- Hero ---------- */
+/* ---------- Hero ----------
+   Replace images/hero-bg.jpg with a yacht/ocean photo (recommended: 1920×1080px or larger, JPEG).
+   The linear-gradient acts as a fallback if the image is missing.
+   -------------------------*/
 .hero {
     position: relative;
     min-height: 640px;
