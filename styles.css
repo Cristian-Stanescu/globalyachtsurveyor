@@ -799,6 +799,32 @@ nav.main-nav ul li a.active {
     transform: translateY(-2px);
 }
 
+.surveys-page .survey-content h3 {
+    font-family: 'Raleway', sans-serif;
+    color: var(--navy);
+    font-size: 0.98rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.01em;
+    font-weight: 600;
+}
+
+.surveys-page .survey-content h3:first-of-type {
+    margin-top: 1rem;
+}
+
+.surveys-page .survey-content ul {
+    margin-left: 1.8rem;
+    list-style-type: disc;
+}
+
+.surveys-page .survey-content li {
+    color: var(--text-mid);
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+    line-height: 1.5;
+}
+
 .surveys-page .certifications {
     padding: 0 0 4.8rem;
 }
