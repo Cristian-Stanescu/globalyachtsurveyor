@@ -745,6 +745,10 @@ nav.main-nav ul li a.active {
     gap: 1.25rem;
 }
 
+.surveys-page .registry-list {
+    padding: 5px 20px;
+}
+
 .surveys-page .service-item {
     border: 1px solid var(--mid-gray);
     border-radius: 5px;
@@ -797,6 +801,12 @@ nav.main-nav ul li a.active {
 .surveys-page .cta a:hover {
     background: #3b8fc3;
     transform: translateY(-2px);
+}
+
+.surveys-page .survey-content img {
+    display: block;
+    margin: 1.5rem auto;
+    max-width: 100%;
 }
 
 .surveys-page .survey-content h3 {
