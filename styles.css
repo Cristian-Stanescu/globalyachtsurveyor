@@ -1008,6 +1008,19 @@ nav.main-nav ul li.has-dropdown .dropdown li a:hover {
     .home-page .form-row { grid-template-columns: 1fr; }
 }
 
+@media screen and (max-width: 800px) {
+    .contact-cols {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        justify-items: center;
+        gap: 1.8rem;
+    }
+
+    .contact-info-col {
+        width: min(100%, 420px);
+    }
+}
+
 @media (max-width: 640px) {
     .surveys-page .top-bar-inner { justify-content: center; }
     .surveys-page .services-panel { padding: 1.2rem; }
